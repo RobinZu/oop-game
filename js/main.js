@@ -6,10 +6,9 @@ class Player {
         this.width = 20;
         this.height = 20;
 
-        //
-        // Create DOM element 
-        //
-
+        this.createDomElement();
+    }
+    createDomElement(){
         // step1: create the element:
         this.domElement = document.createElement("div");
 
@@ -20,12 +19,9 @@ class Player {
         this.domElement.style.width = this.width + "vw";
         this.domElement.style.height = this.height + "vh";
         
-
         //step3: append to the dom: `parentElm.appendChild()`
         const board = document.getElementById("board");
         board.appendChild(this.domElement);
-
-
     }
     moveLeft() {
         this.positionX--;
