@@ -1,10 +1,10 @@
 
 class Player {
     constructor() {
-        this.positionX = 0;
-        this.positionY = 0;
         this.width = 20;
         this.height = 20;
+        this.positionX = 0;
+        this.positionY = 0;
 
         this.createDomElement();
     }
@@ -14,10 +14,10 @@ class Player {
 
         // step2: add content or modify (ex. innerHTML...)
         this.domElement.id = "player";
-        this.domElement.style.left = this.positionX + "vw";
-        this.domElement.style.bottom = this.positionY + "vh";
         this.domElement.style.width = this.width + "vw";
         this.domElement.style.height = this.height + "vh";
+        this.domElement.style.left = this.positionX + "vw";
+        this.domElement.style.bottom = this.positionY + "vh";
 
         //step3: append to the dom: `parentElm.appendChild()`
         const board = document.getElementById("board");
@@ -36,10 +36,10 @@ class Player {
 
 class Obstacle {
     constructor() {
-        this.positionX = 40;
-        this.positionY = 90;
         this.width = 20;
         this.height = 10;
+        this.positionX = Math.floor(Math.random() * (100 - this.width + 1)); // random number between 0 and (100 - this.width)
+        this.positionY = 100;
 
         this.createDomElement();
     }
@@ -49,10 +49,10 @@ class Obstacle {
 
         // step2: add content or modify (ex. innerHTML...)
         this.domElement.className = "obstacle";
-        this.domElement.style.left = this.positionX + "vw";
-        this.domElement.style.bottom = this.positionY + "vh";
         this.domElement.style.width = this.width + "vw";
         this.domElement.style.height = this.height + "vh";
+        this.domElement.style.left = this.positionX + "vw";
+        this.domElement.style.bottom = this.positionY + "vh";
 
         //step3: append to the dom: `parentElm.appendChild()`
         const board = document.getElementById("board");
