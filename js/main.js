@@ -73,13 +73,25 @@ const obstacles = []; // array of instances of the class Obstacle
 setInterval(() => {
     const newObstacle = new Obstacle();
     obstacles.push(newObstacle);
-}, 2000);
+}, 4000);
 
 
-// move all obstacles
+// update all obstacles
 setInterval(() => {
     obstacles.forEach((obstacleInstance) => {
+        // move current obstacle
         obstacleInstance.moveDown();
+
+        // detect collision
+        if(
+            player.positionX < obstacleInstance.positionX + obstacleInstance.width &&
+            player.positionX + player.width > obstacleInstance.positionX &&
+            player.positionY < obstacleInstance.positionY + obstacleInstance.height &&
+            player.positionY + player.height > obstacleInstance.positionY
+        ) {
+            console.log("game over!....");
+            location.href = "gameover.html";
+        }
     });
 }, 50);
 
