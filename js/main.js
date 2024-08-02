@@ -55,8 +55,10 @@ class Obstacle {
 
         const classesArr= ["obstacle-cat", "obstacle-giphy", "obstacle-karate",
              "obstacle-2","obstacle-3", "obstacle-4",
-            "obstacle-5" ];
-        const randomIndex =  Math.floor(Math.random() * classesArr.length);
+            "obstacle-5", "obstacle-6", "obstacle-7", "obstacle-10", "obstacle-8"
+            , "obstacle-9","obstacle11", "obstacle-12", "obstacle-13",
+              "obstacle-15" ];
+        const randomIndex =  Math.floor(Math.random() * classesArr.length ++);
         const randomClass = classesArr[randomIndex];
 
         // step1: create the element:
@@ -121,4 +123,25 @@ document.addEventListener("keydown", (e) => {
     } else if (e.code === 'ArrowDown'){
         player.moveDown();
     }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('myAudio');
+    var autoplayMsg = document.getElementById('autoplayMsg');
+
+    // Try to play the audio
+    audio.play().then(function() {
+        console.log('Audio is playing automatically.');
+    }).catch(function(error) {
+        console.log('Autoplay was prevented:', error);
+
+        // Show a message to the user that autoplay was blocked
+        autoplayMsg.style.display = 'block';
+
+        // Allow the user to start the audio manually
+        autoplayMsg.addEventListener('click', function() {
+            audio.play();
+        });
+    });
 });

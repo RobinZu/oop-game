@@ -20,6 +20,17 @@ body {
     background-position: center; 
     position: absolute;
 }
+ #text {
+    text-align: center;
+    position: relative;
+    color:rgb(0, 238, 255);
+    font-size: xx-large;
+    font-weight: bold;
+   
+    font-family:serif;
+    font-style: oblique;
+    
+}
 
 .obstacle {
     /* background-image: url(pikachu-thunderbolt-attack-mb7705xevk0jcmrx.gif), 
@@ -71,8 +82,11 @@ body {
     background-position: center; 
 }
 
-p * {
-    font:bolder
+
+
+h1 * {
+    font:bolder;
+    color:rgb(255, 0, 230);
 }
 
 
@@ -100,12 +114,36 @@ p * {
 }
 .obstacle-4 {
     background-image: url(haha-baby.gif);
-
 }
-
-
-
-
 .obstacle-5 {
-    background-image: url(giphy3.webp);
+    background-image: url(dragonb.webp);
 }
+.obstacle-6 {
+    background-image: url(cockc.webp);
+}
+.obstacle-7 {
+    background-image: url(girl.webp);
+}
+.obstacle-8 {
+    background-image: url(got.webp);
+}
+.obstacle-9 {
+    background-image: url(panda.webp);
+}
+.obstacle-10 {
+    background-image: url(200.webp);
+}
+.obstacle-11 {
+    background-image: url(bike.gif);
+}
+.obstacle-12 {
+    background-image: url(bird.webp);
+}
+.obstacle-13 {
+    background-image: url(gandalf.webp);
+}
+
+.obstacle-15 {
+    background-image: url(drunk.webp);
+}
+
