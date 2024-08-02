@@ -4,24 +4,108 @@ body {
 }
 
 #board {
-    background-color: rgb(199, 214, 238);
+    background-image: url(270086.jpg);
+    background-size:cover;
+    background-position: center; 
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    
 }
 
 #player {
-    background-color: rgb(255, 0, 166);
+    background-image: url(giphy2.webp);
+    background-size:cover;
+    background-position: center; 
     position: absolute;
 }
 
 .obstacle {
-    background-color: rgb(90, 19, 156);
+    /* background-image: url(pikachu-thunderbolt-attack-mb7705xevk0jcmrx.gif), 
+    url(9977d247831c5dfa6e071c14eddede34_w200.gif),
+    url(giphy3.webp); */
+    /* animation: images1 5s forwards	infinite; */
+    /* animation-delay: 0; */
     position: absolute;
+    background-size:cover;
+    background-position: center;    
 }
+/* @keyframes images1 {
+    10% {
+        background-image: url(cat.gif);
+    }
+    20% {
+        background-image: url(giphy.webp);
+    }
+    30% {
+        background-image: url(9977d247831c5dfa6e071c14eddede34_w200.gif);
+    } 40% {
+        background-image: url(cats-titanic.gif);
+    } 50% {
+        background-image: url(giphy3.webp);
+    } 60% {
+        background-image: url(pikachu-thunderbolt-attack-mb7705xevk0jcmrx.gif);
+    } 70% {
+        background-image: url(good-afternoon-dogs.gif);
+    } 80% {
+        background-image: url(KolL9w.gif);
+    } 85% {
+        background-image: url(stpatricksday-irish.gif);
+    } 90% {
+        background-image: url(cat-dance-dancing-cat.gif);
+    }
+    95% {
+        background-image: url(dancing-cat-dance.gif);
+    }
+} */
 
 #page-gameover {
     text-align: center;
-    background-color: rgb(166, 161, 171);
+    color: rgb(255, 0, 212);
+    font-size:xx-large;
+    
+    background-image: url(giphy.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+p * {
+    font:bolder
+}
+
+
+.obstacle-cat {
+    background-image: url(cat.gif);
+}
+
+.obstacle-giphy {
+    background-image: url(good-afternoon-dogs.gif);
+}
+
+
+.obstacle-karate {
+    background-image: url(9977d247831c5dfa6e071c14eddede34_w200.gif);
+}
+
+
+.obstacle-2 {
+    background-image: url(stpatricksday-irish.gif);
+
+}
+.obstacle-3 {
+    background-image: url(pikachu-thunderbolt-attack-mb7705xevk0jcmrx.gif);
+
+}
+.obstacle-4 {
+    background-image: url(haha-baby.gif);
+
+}
+
+
+
+
+.obstacle-5 {
+    background-image: url(giphy3.webp);
 }
